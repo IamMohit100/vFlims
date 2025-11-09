@@ -1,16 +1,102 @@
-# React + Vite
+# 🧩 EZ Labs Frontend Assignment – Contact Form (React + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Demo  
+🚀 **Hosted on Netlify:** [https://vflims.netlify.app/](https://vflims.netlify.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 Overview  
+This is a **single-page responsive React web application** built as part of the **EZ Labs Frontend Developer Assignment**.  
+The goal of the project is to recreate the provided **Figma home page design** and integrate a **Contact Form** with a live API endpoint.
 
-## React Compiler
+It demonstrates:
+- Responsive UI development  
+- Frontend validation for form fields  
+- API integration using `fetch()`  
+- Clean, modular React structure  
+- Real-time feedback on form submission  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technology |
+|-----------|-------------|
+| Frontend Framework | **React.js (Vite)** |
+| Styling | **Tailwind CSS** |
+| Deployment | **Netlify** |
+| API Testing | **Postman** |
+
+---
+
+## 🎨 Design Reference
+The layout and styling are based on the official Figma design provided in the assignment:  
+[🎨 Figma – EZ Labs Assignment](https://www.figma.com/design/1EUuNvrVUVWuYkTG0OmpMj/EZ-Labs-Assignment?node-id=0-1&t=WoUIFHGYARdd1lg0-1)
+
+---
+
+## 🧩 Features
+✅ Responsive Home Page (desktop + mobile)  
+✅ Contact Form with Field Validation  
+✅ API Integration with POST request  
+✅ “Form Submitted” message on success  
+✅ Clean Tailwind styling  
+✅ Deployed public version on Netlify  
+
+---
+
+## 📡 API Information
+
+- POST https://vernanbackend.ezlab.in/api/contact-us/
+
+
+### 📤 Request Example:
+
+json
+      {
+
+      "name": "Test user",
+  
+      "email": "testuser@gmail.com",
+  
+      "phone": "908765498",
+  
+      "message": "This is a message"
+  
+      }
+
+
+### 📥 Expected Response (200 OK):
+
+    {
+
+      "id": 49,
+  
+      "name": "Test user",
+  
+      "email": "testuser@gmail.com",
+  
+      "phone": "908765498",
+  
+      "message": "This is a message",
+  
+      "created_at": "2025-10-10T05:27:59.371578Z",
+  
+      "updated_at": "2025-10-10T05:27:59.371598Z"
+  
+    }
+
+## ⚙️ Validation Rules
+
+- All fields are required.
+
+- Email must be valid.
+
+- On success, “✅ Form Submitted” appears on screen.
+
+- Invalid inputs trigger clear error messages.
+
+
+
+
+
