@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "e1b9fbfb-b16a-4084-83c8-60f82426dd57",
+		"name": "EZ_LAB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49453925",
+		"_collection_link": "https://mohit-kashyap5452-297522.postman.co/workspace/Mohit-G29-FSD's-Workspace~042fbebf-e912-4007-8035-70ca58ffab34/collection/49453925-e1b9fbfb-b16a-4084-83c8-60f82426dd57?action=share&source=collection_link&creator=49453925"
+	},
+	"item": [
+		{
+			"name": "https://vernanbackend.ezlab.in/api/contact-us/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"name\": \"Mohit\",\r\n  \"email\": \"mohit.kashyap5452@gmail.com\",\r\n  \"phone\": \"7982840092\",\r\n  \"message\": \"This is a message\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
